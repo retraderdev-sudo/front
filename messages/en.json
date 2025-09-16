@@ -1,0 +1,141 @@
+{
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "loginTitle": "Sign in to your account",
+    "registerTitle": "Create your account",
+    "loginButton": "Sign In",
+    "registerButton": "Sign Up",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "loginSuccess": "Login successful",
+    "registerSuccess": "Registration successful",
+    "logoutSuccess": "Logout successful",
+    "signupTitle": "Create your account",
+    "signupSubtitle": "Get started with Retrader today",
+    "createAccount": "Create Account",
+    "signupDescription": "Enter your details to create your account",
+    "otpDescription": "Enter the verification code sent to your email",
+    "emailSignup": "Email Signup",
+    "socialSignup": "Social Signup",
+    "usernamePlaceholder": "Enter your username",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "creating": "Creating...",
+    "signupButton": "Create Account",
+    "signupWithGoogle": "Sign up with Google",
+    "signupSuccess": "Registration successful. Please check your email for OTP.",
+    "signupError": "Registration failed. Please try again.",
+    "otpSentTo": "OTP sent to",
+    "verifying": "Verifying...",
+    "verifyOtp": "Verify OTP",
+    "resendIn": "Resend in {seconds}s",
+    "resendOtp": "Resend OTP",
+    "backToSignup": "Back to Signup",
+    "signIn": "Sign In",
+    "loginSubtitle": "Welcome back to Retrader",
+    "signInToAccount": "Sign in to your account",
+    "loginDescription": "Enter your credentials to access your account",
+    "emailLogin": "Email Login",
+    "socialLogin": "Social Login",
+    "passwordLogin": "Password",
+    "otpLogin": "OTP",
+    "signingIn": "Signing in...",
+    "signInWithGoogle": "Sign in with Google",
+    "otpSent": "OTP sent to your email",
+    "backToLogin": "Back to Login",
+    "signUp": "Sign Up",
+    "welcomeMessage": "Welcome! You are signed in",
+    "signinError": "Sign in failed. Please try again.",
+    "loginError": "Login failed. Please try again.",
+    "otpError": "OTP verification failed. Please try again.",
+    "otpResent": "OTP resent successfully",
+    "otpResendError": "Failed to resend OTP. Please try again.",
+    "googleSignupError": "Google signup failed. Please try again.",
+    "googleLoginError": "Google login failed. Please try again."
+  },
+  "home": {
+    "title": "Retrader",
+    "welcome": "Welcome to Retrader",
+    "description": "Your comprehensive trading platform for cryptocurrency and traditional markets.",
+    "logout": "Logout",
+    "userInfo": {
+      "title": "User Information",
+      "description": "Your account details"
+    },
+    "features": {
+      "trading": {
+        "title": "Trading",
+        "description": "Buy and sell cryptocurrencies with advanced trading tools",
+        "button": "Start Trading"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Track your investments and monitor performance",
+        "button": "View Portfolio"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Advanced charts and market analysis tools",
+        "button": "View Analytics"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "english": "English",
+    "persian": "فارسی"
+  },
+  "plans": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the perfect plan for your needs",
+    "subscribe": "Subscribe",
+    "processing": "Processing...",
+    "bestValue": "Best Value",
+    "noPlans": "No plans available at the moment.",
+    "enterEmail": "Please enter your email address:",
+    "checkoutError": "Failed to start checkout process",
+    "plansError": "Failed to load plans"
+  },
+  "header": {
+    "logo": "Retrader",
+    "navigation": {
+      "plans": "Plans",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "latest": "Latest"
+    },
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "wallet": {
+    "hero": {
+      "title": "Connect your wallet to start earning with our",
+      "highlight": "profitable trading strategies",
+      "subtitle": "Join thousands of traders who are already maximizing their crypto portfolio with our advanced DeFi trading protocol",
+      "connectButton": "Connect Your Wallet Now"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "auth": {
+    "login": "ورود",
+    "register": "ثبت نام",
+    "logout": "خروج",
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "confirmPassword": "تأیید رمز عبور",
+    "username": "نام کاربری",
+    "loginTitle": "وارد حساب کاربری خود شوید",
+    "registerTitle": "حساب کاربری خود را ایجاد کنید",
+    "loginButton": "ورود",
+    "registerButton": "ثبت نام",
+    "alreadyHaveAccount": "قبلاً حساب کاربری دارید؟",
+    "dontHaveAccount": "حساب کاربری ندارید؟",
+    "loginSuccess": "ورود موفقیت‌آمیز",
+    "registerSuccess": "ثبت نام موفقیت‌آمیز",
+    "logoutSuccess": "خروج موفقیت‌آمیز",
+    "signupTitle": "حساب کاربری خود را ایجاد کنید",
+    "signupSubtitle": "امروز با ری‌تریدر شروع کنید",
+    "createAccount": "ایجاد حساب",
+    "signupDescription": "جزئیات خود را وارد کنید تا حساب کاربری خود را ایجاد کنید",
+    "otpDescription": "کد تایید ارسال شده به ایمیل خود را وارد کنید",
+    "emailSignup": "ثبت نام با ایمیل",
+    "socialSignup": "ثبت نام با شبکه‌های اجتماعی",
+    "usernamePlaceholder": "نام کاربری خود را وارد کنید",
+    "emailPlaceholder": "ایمیل خود را وارد کنید",
+    "passwordPlaceholder": "رمز عبور خود را وارد کنید",
+    "confirmPasswordPlaceholder": "رمز عبور خود را تأیید کنید",
+    "creating": "در حال ایجاد...",
+    "signupButton": "ایجاد حساب",
+    "signupWithGoogle": "ثبت نام با گوگل",
+    "signupSuccess": "ثبت نام موفقیت‌آمیز. لطفاً ایمیل خود را برای کد تایید بررسی کنید.",
+    "signupError": "ثبت نام ناموفق. لطفاً دوباره تلاش کنید.",
+    "otpSentTo": "کد تایید ارسال شده به",
+    "verifying": "در حال تایید...",
+    "verifyOtp": "تایید کد",
+    "resendIn": "ارسال مجدد در {seconds} ثانیه",
+    "resendOtp": "ارسال مجدد کد",
+    "backToSignup": "بازگشت به ثبت نام",
+    "signIn": "ورود",
+    "loginSubtitle": "به ری‌تریدر خوش آمدید",
+    "signInToAccount": "وارد حساب کاربری خود شوید",
+    "loginDescription": "اعتبارنامه خود را وارد کنید تا به حساب کاربری خود دسترسی پیدا کنید",
+    "emailLogin": "ورود با ایمیل",
+    "socialLogin": "ورود با شبکه‌های اجتماعی",
+    "passwordLogin": "رمز عبور",
+    "otpLogin": "کد تایید",
+    "signingIn": "در حال ورود...",
+    "signInWithGoogle": "ورود با گوگل",
+    "otpSent": "کد تایید به ایمیل شما ارسال شد",
+    "backToLogin": "بازگشت به ورود",
+    "signUp": "ثبت نام",
+    "welcomeMessage": "خوش آمدید! شما وارد شدید",
+    "signinError": "ورود ناموفق. لطفاً دوباره تلاش کنید.",
+    "loginError": "ورود ناموفق. لطفاً دوباره تلاش کنید.",
+    "otpError": "تایید کد ناموفق. لطفاً دوباره تلاش کنید.",
+    "otpResent": "کد تایید با موفقیت ارسال مجدد شد",
+    "otpResendError": "ارسال مجدد کد ناموفق. لطفاً دوباره تلاش کنید.",
+    "googleSignupError": "ثبت نام با گوگل ناموفق. لطفاً دوباره تلاش کنید.",
+    "googleLoginError": "ورود با گوگل ناموفق. لطفاً دوباره تلاش کنید."
+  },
+  "home": {
+    "title": "ری‌تریدر",
+    "welcome": "به ری‌تریدر خوش آمدید",
+    "description": "پلتفرم جامع معاملاتی شما برای ارزهای دیجیتال و بازارهای سنتی.",
+    "logout": "خروج",
+    "userInfo": {
+      "title": "اطلاعات کاربر",
+      "description": "جزئیات حساب کاربری شما"
+    },
+    "features": {
+      "trading": {
+        "title": "معاملات",
+        "description": "خرید و فروش ارزهای دیجیتال با ابزارهای پیشرفته معاملاتی",
+        "button": "شروع معاملات"
+      },
+      "portfolio": {
+        "title": "پرتفوی",
+        "description": "سرمایه‌گذاری‌های خود را ردیابی کنید و عملکرد را نظارت کنید",
+        "button": "مشاهده پرتفوی"
+      },
+      "analytics": {
+        "title": "تحلیل‌ها",
+        "description": "نمودارهای پیشرفته و ابزارهای تحلیل بازار",
+        "button": "مشاهده تحلیل‌ها"
+      }
+    }
+  },
+  "common": {
+    "loading": "در حال بارگذاری...",
+    "error": "خطایی رخ داد",
+    "success": "موفقیت",
+    "cancel": "لغو",
+    "save": "ذخیره",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "back": "بازگشت",
+    "next": "بعدی",
+    "previous": "قبلی"
+  },
+  "theme": {
+    "light": "روشن",
+    "dark": "تیره",
+    "system": "سیستم"
+  },
+  "language": {
+    "english": "English",
+    "persian": "فارسی"
+  },
+  "header": {
+    "logo": "ری‌تریدر",
+    "navigation": {
+      "plans": "پلن‌ها",
+      "about": "درباره ما",
+      "contact": "تماس با ما",
+      "latest": "آخرین‌ها"
+    },
+    "menu": "منو",
+    "close": "بستن"
+  },
+  "wallet": {
+    "hero": {
+      "title": "کیف پول خود را متصل کنید تا با",
+      "highlight": "استراتژی‌های معاملاتی سودآور ما",
+      "subtitle": "به هزاران معامله‌گری بپیوندید که در حال حاضر با پروتکل پیشرفته معاملات DeFi ما، سبد ارزهای دیجیتال خود را به حداکثر می‌رسانند",
+      "connectButton": "کیف پول خود را اکنون متصل کنید"
+    }
+  }
+}
