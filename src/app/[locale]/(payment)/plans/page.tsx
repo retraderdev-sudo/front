@@ -41,7 +41,8 @@ export default function PlansPage() {
 
   const fetchPlans = async () => {
     try {
-      const response = await fetch('http://localhost:3001/plans');
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+      const response = await fetch(`${apiUrl}/plans`);
       if (!response.ok) {
         throw new Error('Failed to fetch plans');
       }
@@ -69,7 +70,8 @@ export default function PlansPage() {
 
       const email = session.user.email;
 
-      const response = await fetch('http://localhost:3001/stripe/checkout', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+      const response = await fetch(`${apiUrl}/stripe/checkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

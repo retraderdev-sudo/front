@@ -31,13 +31,12 @@ export const authOptions: NextAuthOptions = {
 
           if (credentials.loginMethod === 'otp') {
             // Handle OTP login
-            response = await axios.post(
-              `${process.env.NEXT_PUBLIC_API_URL}/auth/login-otp`,
-              {
-                email: credentials.email,
-                code: credentials.otp,
-              }
-            );
+            const apiUrl =
+              process.env.API_URL || process.env.NEXT_PUBLIC_API_URL;
+            response = await axios.post(`${apiUrl}/auth/login-otp`, {
+              email: credentials.email,
+              code: credentials.otp,
+            });
           } else {
             // Handle password login
             console.log('NextAuth: Attempting login with:', {
@@ -52,14 +51,14 @@ export const authOptions: NextAuthOptions = {
               return null;
             }
 
-            response = await axios.post(
-              `${process.env.NEXT_PUBLIC_API_URL}/auth/login`,
-              {
-                email: credentials.email,
-                password: credentials.password,
-                loginMethod: credentials.loginMethod,
-              }
-            );
+            const apiUrl =
+              process.env.API_URL || process.env.NEXT_PUBLIC_API_URL;
+            console.log('NextAuth: Using API URL:', apiUrl);
+            response = await axios.post(`${apiUrl}/auth/login`, {
+              email: credentials.email,
+              password: credentials.password,
+              loginMethod: credentials.loginMethod,
+            });
           }
 
           console.log('NextAuth: Backend response:', response.data);
@@ -111,8 +110,9 @@ export const authOptions: NextAuthOptions = {
       if (account?.provider === 'google') {
         try {
           // Send user data to your NestJS backend
+          const apiUrl = process.env.API_URL || process.env.NEXT_PUBLIC_API_URL;
           const response = await axios.post(
-            `${process.env.NEXT_PUBLIC_API_URL}/auth/google`,
+            `${apiUrl}/auth/google`,
             {
               email: user.email,
               name: user.name,

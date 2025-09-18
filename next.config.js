@@ -8,8 +8,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/:path*',
-        destination: 'http://backend:4000/:path*', // redirect API calls to Nest.js
+        source: '/api/((?!auth).*)/:path*',
+        destination: 'http://backend:4000/$1/:path*', // redirect API calls to Nest.js, except /api/auth/*
       },
     ];
   },

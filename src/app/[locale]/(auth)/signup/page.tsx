@@ -45,6 +45,7 @@ export default function SignupPage() {
   const t = useTranslations('auth');
 
   const signupForm = useForm<SignupFormData>({
+    resolver: yupResolver(getValidationSchema('signup')),
     defaultValues: {
       email: '',
       password: '',
