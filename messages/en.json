@@ -122,6 +122,7 @@
   "header": {
     "logo": "Retrader",
     "navigation": {
+      "home": "Home",
       "plans": "Plans",
       "about": "About Us",
       "contact": "Contact Us",
@@ -137,5 +138,57 @@
       "subtitle": "Join thousands of traders who are already maximizing their crypto portfolio with our advanced DeFi trading protocol",
       "connectButton": "Connect Your Wallet Now"
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Retrader",
+    "items": {
+      "whatIsRetrader": {
+        "question": "What is Retrader?",
+        "answer": "Retrader is a comprehensive cryptocurrency trading platform that provides advanced trading tools, portfolio management, and market analytics. We offer both traditional and DeFi trading options with professional-grade features for traders of all levels."
+      },
+      "howToStart": {
+        "question": "How do I get started with trading?",
+        "answer": "Getting started is easy! First, create an account and complete the verification process. Then, choose a subscription plan that fits your needs, connect your wallet, and you'll have access to our advanced trading tools and strategies."
+      },
+      "tradingFees": {
+        "question": "What are the trading fees?",
+        "answer": "Our trading fees are competitive and transparent. Fees vary based on your subscription plan and trading volume. Basic plans start with standard fees, while premium plans offer reduced fees and additional benefits. Check our pricing page for detailed information."
+      },
+      "security": {
+        "question": "How secure is my data and funds?",
+        "answer": "Security is our top priority. We use industry-standard encryption, multi-factor authentication, and cold storage for funds. Our platform is regularly audited by security experts, and we follow strict compliance standards to protect your assets and personal information."
+      },
+      "supportedCryptocurrencies": {
+        "question": "Which cryptocurrencies are supported?",
+        "answer": "We support a wide range of cryptocurrencies including Bitcoin, Ethereum, and hundreds of altcoins. Our platform also supports DeFi tokens and provides access to various blockchain networks. Check our supported assets list for the complete catalog."
+      },
+      "customerSupport": {
+        "question": "What kind of customer support do you offer?",
+        "answer": "We provide 24/7 customer support through multiple channels including live chat, email, and phone. Our support team consists of crypto experts who can help with trading questions, technical issues, and account management. Premium users get priority support."
+      }
+    }
+  },
+  "footer": {
+    "home": "Home",
+    "plans": "Plans",
+    "wallet": "Wallet",
+    "latest": "Latest",
+    "explore": "Explore",
+    "about": "About",
+    "legal": "Legal",
+    "aboutUs": "About Us",
+    "contactSupport": "Contact Support",
+    "termsConditions": "Terms & Conditions",
+    "faqs": "FAQs",
+    "account": "Account",
+    "myAccount": "My Account",
+    "myWallet": "My Wallet",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "logo": "Retrader",
+    "retrader": "Retrader",
+    "allRightsReserved": "All rights reserved"
   }
 }

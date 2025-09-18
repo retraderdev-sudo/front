@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';
 import { HeroSection } from '@/components/hero-section';
+import { FAQSection } from '@/components/faq-section';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -118,6 +119,9 @@ export default function HomePage() {
           </div>
         </div>
       )}
+
+      {/* FAQ Section - Visible to all users */}
+      <FAQSection />
     </div>
   );
 }

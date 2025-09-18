@@ -28,6 +28,7 @@ export function Header({ className }: HeaderProps) {
   const isRTL = locale === 'fa';
 
   const navigationItems = [
+    { key: 'home', href: '/home' },
     { key: 'plans', href: '/plans' },
     { key: 'about', href: '/about' },
     { key: 'contact', href: '/contact' },
