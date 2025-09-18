@@ -103,6 +103,9 @@ export function Header({ className }: HeaderProps) {
                   </Button>
                 </div>
               )}
+              <Button variant="outline" onClick={() => {}}>
+                {t('connect')}
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -146,6 +149,17 @@ export function Header({ className }: HeaderProps) {
               </Link>
             ))}
           </nav>
+
+          {/* Connect Button */}
+          <div className="border-t border-border pt-4">
+            <Button
+              variant="outline"
+              onClick={() => {}}
+              className="w-full justify-start"
+            >
+              {t('connect')}
+            </Button>
+          </div>
 
           {/* Auth Section */}
           <div className="border-t border-border pt-4">
