@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { signIn, getSession } from 'next-auth/react';
@@ -22,6 +22,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { OtpInput } from '@/components/ui/otp-input';
 import { getValidationSchema } from '@/lib/validation';
 import { sendOtp } from '@/lib/auth-api';
+import { useAuthRedirect, getRedirectPath } from '@/utils/auth-redirect';
+import { useLocalizedRouter } from '@/hooks/use-localized-router';
 
 interface LoginFormData {
   email: string;
@@ -43,7 +45,11 @@ export default function LoginPage() {
   const [otpLoading, setOtpLoading] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
   const router = useRouter();
+  const localizedRouter = useLocalizedRouter();
   const t = useTranslations('auth');
+
+  // Redirect if already authenticated
+  useAuthRedirect();
 
   const loginForm = useForm<LoginFormData>({
     defaultValues: {
@@ -87,8 +93,10 @@ export default function LoginPage() {
 
       if (signInResult?.ok) {
         toast.success(t('welcomeMessage'));
-        // Let middleware handle the redirect based on user role
-        window.location.href = '/';
+        // Get the session to determine user role and redirect accordingly
+        const session = await getSession();
+        const redirectPath = getRedirectPath(session?.user?.role);
+        localizedRouter.push(redirectPath);
       } else {
         toast.error(t('signinError'));
       }
@@ -112,8 +120,10 @@ export default function LoginPage() {
 
       if (signInResult?.ok) {
         toast.success(t('welcomeMessage'));
-        // Let middleware handle the redirect based on user role
-        window.location.href = '/';
+        // Get the session to determine user role and redirect accordingly
+        const session = await getSession();
+        const redirectPath = getRedirectPath(session?.user?.role);
+        localizedRouter.push(redirectPath);
       } else {
         toast.error(t('signinError'));
       }

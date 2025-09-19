@@ -1,4 +1,6 @@
-export default function HomePage() {
-  // This page should never be reached as middleware handles the redirect
-  return <h1 className="bg-black text-white">Redirecting...</h1>;
+import { redirect } from 'next/navigation';
+
+export default function RootPage() {
+  // Redirect to default locale
+  redirect('/en');
 }

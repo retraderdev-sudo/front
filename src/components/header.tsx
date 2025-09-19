@@ -103,9 +103,22 @@ export function Header({ className }: HeaderProps) {
                   </Button>
                 </div>
               )}
-              <Button variant="outline" onClick={() => {}}>
+              <Button
+                variant="outline"
+                onClick={() => {
+                  if (!session) {
+                    router.push('/login');
+                  }
+                  // If authenticated, do nothing for now
+                }}
+              >
                 {t('connect')}
               </Button>
+              {session?.user?.role === 'ADMIN' && (
+                <Button variant="outline" asChild>
+                  <Link href="/admin/dashboard">{t('dashboard')}</Link>
+                </Button>
+              )}
             </div>
 
             {/* Mobile Menu Button */}
@@ -154,11 +167,28 @@ export function Header({ className }: HeaderProps) {
           <div className="border-t border-border pt-4">
             <Button
               variant="outline"
-              onClick={() => {}}
+              onClick={() => {
+                if (!session) {
+                  router.push('/login');
+                  closeMobileMenu();
+                }
+                // If authenticated, do nothing for now
+              }}
               className="w-full justify-start"
             >
               {t('connect')}
             </Button>
+            {session?.user?.role === 'ADMIN' && (
+              <Button
+                variant="outline"
+                asChild
+                className="mt-2 w-full justify-start"
+              >
+                <Link href="/admin/dashboard" onClick={closeMobileMenu}>
+                  {t('dashboard')}
+                </Link>
+              </Button>
+            )}
           </div>
 
           {/* Auth Section */}

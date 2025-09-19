@@ -23,6 +23,8 @@ import { OtpInput } from '@/components/ui/otp-input';
 import { getValidationSchema } from '@/lib/validation';
 import { signup, sendOtp, verifyOtp } from '@/lib/auth-api';
 import { createOtpEmailTemplate, sendOtpEmail } from '@/lib/email-template';
+import { useAuthRedirect, getRedirectPath } from '@/utils/auth-redirect';
+import { useLocalizedRouter } from '@/hooks/use-localized-router';
 
 interface SignupFormData {
   email: string;
@@ -42,7 +44,11 @@ export default function SignupPage() {
   const [otpLoading, setOtpLoading] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
   const router = useRouter();
+  const localizedRouter = useLocalizedRouter();
   const t = useTranslations('auth');
+
+  // Redirect if already authenticated
+  useAuthRedirect();
 
   const signupForm = useForm<SignupFormData>({
     resolver: yupResolver(getValidationSchema('signup')),
@@ -111,8 +117,10 @@ export default function SignupPage() {
 
         if (signInResult?.ok) {
           toast.success(t('welcomeMessage'));
-          // Let middleware handle the redirect based on user role
-          window.location.href = '/';
+          // Get the session to determine user role and redirect accordingly
+          const session = await getSession();
+          const redirectPath = getRedirectPath(session?.user?.role);
+          localizedRouter.push(redirectPath);
         } else {
           toast.error(t('signinError'));
         }

@@ -1,4 +1,10 @@
-export default function HomePage() {
-  // This page should never be reached as middleware handles all redirects
-  return <h1>Redirecting...</h1>;
+import { redirect } from 'next/navigation';
+
+export default function LocalePage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  // Redirect to home page for the locale
+  redirect(`/${locale}/home`);
 }

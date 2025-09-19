@@ -17,7 +17,7 @@ export function LayoutWrapper({ children }: LayoutWrapperProps) {
   // Check if current route is an admin route
   const isAdminRoute = pathname.includes('/admin');
 
-  // Check if current route should show header (not admin routes)
+  // Check if current route should show header and footer (not admin routes)
   const shouldShowHeader = !isAdminRoute;
 
   return (
